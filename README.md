@@ -12,68 +12,68 @@ The existence of machine learning has greatly helped many needs in various field
 ## Exploratory Analysis
 1. Default Payment
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/1.png)
+![DEFAULT PAYMENT](image/1.png)
 
 2330 of the total 2965 or 78.58% of the data population were identified as non-default credit card users, while 635 or 21.42% were identified as default credit card users. The data is very unbalanced between the default note users and the default data. Actually, this is very reasonable when viewed from the real world where most people will always pay their credit cards on time. Meanwhile, for people who have credit card payment arrears the number of defaults will not be much. Of course, this is a general assumption that the world is not in a state of economic crisis.
 
 2. Gender Data Distribution
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/2.png)
+![GENDER DATA DISTRIBUTION](image/2.png)
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/3.png)
+![GENDER PROPORTION ON DEFAULT PAYMENT](image/3.png)
 
 It can be seen that the distribution of data by gender is also not balanced. However, the difference is not as far as the data class difference in the default status column. When viewed in each default class, 58.7% of the total population of credit card users who defaulted were women, while the remaining 41.3% were men. While in the non-default class, 61.3% are female credit card users, while the remaining 38.7% are male. This makes the default assessment of users on this credit card data cannot directly related to the gender of the user. Although the default class is dominated by female users, the not default class is also dominated by female users. The conclusion that can be drawn from the simple visualization above is that regardless of the user's default status, credit cards are mostly used by women because basically, it is generally known that women do more shopping activities than men.
 
 3. Education Level
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/4.png)
+![EDUCATION LEVEL](image/4.png)
 
 The credit card users contained in the data are divided into four classes based on the level of education, namely graduate school, university, high school, and others. In general, if you look at the distribution of data on the graph, credit card users with university education status have the highest default status compared to users with other educational statuses. In addition, it can also be seen that there is no correlation between the education level of credit card user and their probability of default. However, when viewed more closely, the population of credit card users with university education status is the largest number of users. The assumption that can be taken here is that the tendency of someone to use a credit card is directly proportional to their level of education. But not so with the default state that can happen to them. This is because, in the available data, the population of users with university education status is the largest. So it cannot be concluded that the level of education is correlated with the possibility of users experiencing default.
 
 4. Marital Status
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/5.png)
+![MARITAL STATUS](image/5.png)
 
 In general, the number of credit card users with married and single statuses is quite balanced. Even when viewed from the default status or not, the two classes are also quite balanced.
 
 5. Age Distribution
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/6.png)
+![AGE DISTRIBUTION](image/6.png)
 
 Most credit card users are in the age group of 24 years to 32 years. In general, the number of credit card users decreases as users age. When viewed from the default status, it can be seen that users who default and do not default based on age have a fairly similar pattern.
 
 6. Age Vs. Marriage
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/7.png)
+![AGE VS MARRIAGE](image/7.png)
 
 If you look at the marital status with the user's age and gender, it can be seen that the average married credit card users are between the ages of 30 and 50 years. Meanwhile, users who are not married or still single are an average age of 20 years to 35 years. There is another class on marital status. When viewed from the age distribution, it can be assumed that this other class contains users with the status of having been married but already widowed or widowed because the age distribution is in the average range of 30 years to 55 years.
 
 7. Limit Balance
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/8.png)
+![LIMIT BALANCE](image/8.png)
 
 The distribution pattern of credit limit data is also almost the same as age, where users with a higher number of limits have a smaller population. When viewed from the default status or not, it can be concluded that the smaller the credit limit owned by the user, the higher the possibility for them to experience default. In general, banks will apply a credit card usage limit for each user based on the bank's estimate of each user's ability to make payments. Therefore, users with high credit limits can be assumed to be users who have high monthly income, so their chances of experiencing default should be smaller.
 
 8. Repayment Status
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/9.png)
+![REPAYMENT STATUS](image/9.png)
 
 Repayment status is the user's monthly credit card payment status. It can be seen that in April 2005 (pay_6), users with 4 months arrears were the most users. Meanwhile, in May 2005 (pay_5), users with 5 and 6 months arrears status both increased. Then in June 2005 (pay_4) and July 2005 (pay_3), users with 5, 6, and 7 months arrears status experienced an increase. The number of users with 8 months arrears status began to appear in September 2005 (pay_1). In addition, it can be seen that the number of users with no arrears status each month did not experience significant changes and tended to stagnate. Users with a 1-month arrears status in September 2005 (pay_1) experienced a considerable increase and users with no arrears status slightly decreased. This can be interpreted that in September users with no arrears status began to decrease and make payments in arrears. This can be seen clearly because previously in August 2005 (pay_2), the number of users with 1-month arrears was very small or almost non-existent.
 
 9. Amount of Bill Statement
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/10.png)
+![AMOUNT OF BILL STATEMENT](image/10.png)
 
 The billing statement is the amount of the bill that must be paid by the credit card used by the bank. In general, it can be seen that the number of bills each month does not change significantly and tends to be the same. However, in July a bill appeared between 450,000 and s.d. 615,000 USD means that in the middle of 2005 the use of credit cards increased in intensity so that the number of bills from users' shopping activities also increases.
 
 10. Amount of Previous Payment
 
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/11.png)
+![AMOUNT OF PREVIOUS PAYMENT](image/11.png)
 
 Previous payment is the amount of payment made by the user based on the bill that the brand has. It can be seen that the nominal payment has increased from April to April. June 2005 (prepr_6, prepr_5, and prepr_4). Meanwhile, in July, August, and September 2005 (prepr_3, prepr_2, and prepr_1) there was no significant pattern depicted.
 
 ## Model Summary and Overall Analysis
-![My Image](../The-Comparison-of-Machine-Learning-Model-for-Credit-Card-Default-Prediction/image/12.png)
+![MODEL SUMMARY](image/12.png)
 
 Based on the results of the correlation carried out on numerical data, credit limit and age have a higher correlation value than other numerical features. So it was decided to eliminate the billing statement and previous payment features from the training data and only use credit limit and age data. Based on the results of hypothesis testing using chi-square on the training data for the above categories, all category features have a relationship with the target data so that they will be used in the modeling process. The two numerical data that will be used to build the classification model have a moderate right skew with a skew value for the credit limit feature of 0.956 and a skew value of 0.774 for the age feature. It was decided that outliers handling would be carried out by censoring the data using windsorizer method. The selection of censoring is done because the amount of data used is very small so if the treatment given is the removal of outliers, it is feared that the data will decrease and affect the performance of the classification model later. There are no missing values for bank credit card users data.
 
