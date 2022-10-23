@@ -73,7 +73,7 @@ The billing statement is the amount of the bill that must be paid by the credit 
 Previous payment is the amount of payment made by the user based on the bill that the brand has. It can be seen that the nominal payment has increased from April to April. June 2005 (prepr_6, prepr_5, and prepr_4). Meanwhile, in July, August, and September 2005 (prepr_3, prepr_2, and prepr_1) there was no significant pattern depicted.
 
 ## Model Summary and Overall Analysis
-![MODEL SUMMARY](image/12.png)
+![MODEL SUMMARY](image/12.PNG)
 
 Based on the results of the correlation carried out on numerical data, credit limit and age have a higher correlation value than other numerical features. So it was decided to eliminate the billing statement and previous payment features from the training data and only use credit limit and age data. Based on the results of hypothesis testing using chi-square on the training data for the above categories, all category features have a relationship with the target data so that they will be used in the modeling process. The two numerical data that will be used to build the classification model have a moderate right skew with a skew value for the credit limit feature of 0.956 and a skew value of 0.774 for the age feature. It was decided that outliers handling would be carried out by censoring the data using windsorizer method. The selection of censoring is done because the amount of data used is very small so if the treatment given is the removal of outliers, it is feared that the data will decrease and affect the performance of the classification model later. There are no missing values for bank credit card users data.
 
